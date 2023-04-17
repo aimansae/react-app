@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {AiFillCalendar} from 'react-icons/ai'
 
 interface ListGroupProps {
     items: string[];
@@ -26,7 +27,9 @@ function ListGroup({ items, heading, onSelectItem }: ListGroupProps) {
                         {item}
                     </li>
                 ))}
-            </ul></>
+            </ul>
+            <AiFillCalendar>Calendar</AiFillCalendar>
+            </>
     )
 }
 
