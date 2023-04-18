@@ -5,6 +5,8 @@ import ListGroup from "./components/ListGroup";
 import ButtonTwo from "./components/ButtonTwo";
 import GreenAlert from "./components/GreenAlert";
 import Like from "./components/Like";
+import Thumbs from "./components/Thumbs";
+import Like2 from "./components/Like2";
 function App() {
   let items = ["Sevilla", "Milano", "tokyo", "london", "paris"];
 
@@ -32,6 +34,8 @@ function App() {
       {showGreenAlert && <GreenAlert onClose={handleClick}>Click Me</GreenAlert>}
       <ButtonTwo color="primary" onClick={handleClick}>Second Button</ButtonTwo> 
       <Like onClick={() =>console.log('clicked')} />
+      <Thumbs onClick={() => console.log('clicked')} />
+      <Like2 onClick={() => console.log('Heart clicked')} />
     </div>
   );
 }
