@@ -7,6 +7,9 @@ import GreenAlert from "./components/GreenAlert";
 import Like from "./components/Like";
 import Thumbs from "./components/Thumbs";
 import Like2 from "./components/Like2";
+import Loading from "./components/Loading";
+import UpdateArrays from "./components/UpdateArrays";
+import UpdateObjects from "./components/UpdateObjects";
 function App() {
   let items = ["Sevilla", "Milano", "tokyo", "london", "paris"];
 
@@ -36,6 +39,9 @@ function App() {
       <Like onClick={() =>console.log('clicked')} />
       <Thumbs onClick={() => console.log('clicked')} />
       <Like2 onClick={() => console.log('Heart clicked')} />
+      <Loading />
+      <UpdateArrays />
+      <UpdateObjects />
     </div>
   );
 }

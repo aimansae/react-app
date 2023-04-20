@@ -7,13 +7,15 @@ interface Props {
 
 const Like2 = ({ onClick }: Props) => {
   const [status, setStatus] = useState(true);
+  let count = 0
 
   const toggle = () => {
     setStatus(!status);
-     console.log(status)
+    count++
+    console.log(status)
     onClick();
   };
-  console.log
+  console.log(count)
 
   if (status) return <AiFillHeart color="red" size={50} onClick={toggle} />;
   return <AiOutlineHeart size={50} onClick={toggle} />;
