@@ -10,8 +10,12 @@ import Like2 from "./components/Like2";
 import Loading from "./components/Loading";
 import UpdateArrays from "./components/UpdateArrays";
 import UpdateObjects from "./components/UpdateObjects";
+import NavBar from "./components/NavBar";
+import Cart from "./components/Cart";
 function App() {
   let items = ["Sevilla", "Milano", "tokyo", "london", "paris"];
+  // for Navbar
+  const [cartItems, setCartItems] = useState(["Product1", "product2"]);
 
   const handleSelectItem = (item: string) => {
     console.log(item);
@@ -42,6 +46,9 @@ function App() {
       <Loading />
       <UpdateArrays />
       <UpdateObjects />
+      <NavBar cartItemsCount={cartItems.length} />
+      <Cart onClear={() => setCartItems([]) } cartItems={cartItems} />
+
     </div>
   );
 }
