@@ -1,0 +1,18 @@
+.grid-3-columns {
+    margin: 5rem auto;
+    width: min(90%, 75rem);
+    display: grid;
+    grid-auto-flow: row;
+    gap:1em;
+   
+  }
+  
+  @media (min-width: 50em) {
+    .grid-3-columns {
+      grid-auto-flow: column;
+      
+      /* didn't mention this during the video
+         but it ensures equal columns  */
+      /*     grid-auto-columns: 1fr; */
+     }
+  }

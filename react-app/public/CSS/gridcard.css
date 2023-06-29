@@ -1,0 +1,48 @@
+
+
+body {
+    display:grid;
+    grid-template-rows:10em 50vh auto 10em ;
+    grid-template-columns: 1fr 5fr 2fr 1fr;
+    grid-template-areas: 
+    "header header header header"
+    "hero hero hero hero"
+    ". main sidebar ."
+    "footer footer footer footer ";
+}
+
+header {
+    grid-area: header;
+}
+
+header, footer {
+    background-color: black;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.hero {
+    grid-area: hero;
+    background: url('https://as2.ftcdn.net/v2/jpg/02/08/28/33/1000_F_208283329_WbSOnMoBBO1yCC0fA31Axh6GrTFToWeB.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}   
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+footer {
+    grid-area: footer;
+}

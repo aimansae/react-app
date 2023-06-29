@@ -1,0 +1,38 @@
+
+
+.container {
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    padding: 4vh;
+    border: 1vh solid rgb(25, 136, 136);
+
+
+}
+
+[class ^="block-"]{
+    display: flex;
+    height: 20vh;
+    gap: 4vh;
+    
+
+}
+
+[class^="box-"] {
+    border : 2px black solid;
+    background-color: #c1c1c1;
+    flex-basis: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (max-width: 468px) {
+    [class ^="block-"]{
+        flex-direction: column;
+        height: 500px;
+
+    }
+}
